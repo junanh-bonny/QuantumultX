@@ -1,2 +1,2 @@
 # QuantumultX
-All about test
+All about life
