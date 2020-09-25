@@ -1,2 +1,2 @@
 # QuantumultX
-All about life
+Nothing here, just testing
