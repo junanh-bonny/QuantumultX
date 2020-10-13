@@ -8,38 +8,45 @@ let config = {
     huweather_apiKey: "02c0b08906504c518be495de0674a334", //和风天气APIkey,可自行前往 https://dev.heweather.com/ 进行获取
     lat_lon: "31.211631, 121.386461", //请填写经纬度,直接从谷歌地图中获取即可
     lang: "zh", //语言,随意切换为您想要的语言哦(zh/zh-tw/ja/en/fr/...)
-    log: 1, //调试日志,0为不开启,1为开启,2为开启精简日志
+    log: 0, //调试日志,0为不开启,1为开启,2为开启精简日志
     timeout: 0, //超时时间,单位毫秒(1000毫秒=1秒),一般不推荐修改[为0则不限制超时时间]
     show: {
         //普通每天的
         template: {
-            title: `$[city]$[district] $[summary]`,
+            title: `$[province]$[city]$[district]$[summary]$[currentTemperature]`,
             subtitle: `$[weatherIcon]$[weather] $[temperatureMin] ~ $[temperatureMax]°C ☔️降雨概率 $[precipProbability]%`,
-            detail: `🥵空气质量: $[aqi]($[aqiDesc]) 
-🍃风速:   $[windSpeed]km/h $[windDir]
-🌞紫外线: $[uv]($[uvDesc]) 
-💧湿度:   $[currentHumidity]%
-🌡体感度: $[apparentTemperatureMin] ~ $[apparentTemperatureMax]°C 
-💨气压:   $[atmosphere]pa
+            detail: `🥵空气质量 $[aqi]($[aqiDesc]) 
+🍃风速$[windSpeed]km/h $[windDir]
+🌞紫外线指数 $[uv]($[uvDesc]) 
+💧湿度$[currentHumidity]%
+🌡体感温度 $[apparentTemperatureMin] ~ $[apparentTemperatureMax]°C 
+💨气压$[atmosphere]pa
+💨能见度$[visibility]
+💨日出时间$[sunrise]
+💨日落时间$[sunset]
+💨月出时间$[moonrise]
+💨月落时间$[moonset]
 
-$[hourly($[month]/$[day] $[hour]:00 紫外线指数$[uvIndex]($[uvDesc]) $[temperature]°C $[weatherIcon]$[weather])]`      
+[生活指数]
+$[lifeStyle($[icon][$[brf]]$[txt])]
 
-`$[daily($[month]月$[day]日  $[temperatureLow]~$[temperatureHigh]°C  $[weatherIcon]$[weather])]`
+[天气周报]
+$[weeklySummary]$[daily($[month]月$[day]日  $[temperatureLow]~$[temperatureHigh]°C  $[weatherIcon]$[weather])]`
         },
         lifestyle: { //此处用于显示各项生活指数，可自行调整顺序，顺序越在前面则显示也会靠前，如果您不想查看某一指数，置为false即可，想看置为true即可
-            drsg: false, //穿衣指数,
-            flu: false, //感冒指数,
-            comf: false, //舒适度指数,
+            drsg: true, //穿衣指数,
+            flu: true, //感冒指数,
+            comf: true, //舒适度指数,
             cw: false, //洗车指数,
             sport: false, //运动指数,
             trav: false, //旅游指数,
-            uv: true, //紫外线指数,
+            uv: false, //紫外线指数,
             air: false, //空气污染扩散条件指数,
             ac: false, //空调开启指数,
             ag: false, //过敏指数,
             gl: false, //太阳镜指数,
             mu: false, //化妆指数,
-            airc: true, //晾晒指数,
+            airc: false, //晾晒指数,
             ptfc: false, //交通指数,
             fsh: false, //钓鱼指数,
             spi: false, //防晒指数
