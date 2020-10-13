@@ -13,9 +13,9 @@ let config = {
     show: {
         //普通每天的
         template: {
-            title: `$[province]$[city]$[district]$[weeklySummary] 当前: $[currentTemperature]°C`,
+            title: `小时天气: $[city]$[district]: $[weeklySummary] 当前: $[currentTemperature]°C`,
             subtitle: ``,
-            detail: `$[hourly($[month]/$[day] $[hour]:00 $[temperature]°C  $[aqi]$[weatherIcon]$[weather] 湿度$[humidity]%)]`
+            detail: `$[hourly($[month]/$[day] $[hour]:00 $[temperature]°C  $[aqiIcon]$[weatherIcon]$[weather] 湿度$[humidity]%)]`
         },
         lifestyle: { //此处用于显示各项生活指数，可自行调整顺序，顺序越在前面则显示也会靠前，如果您不想查看某一指数，置为false即可，想看置为true即可
             drsg: true, //穿衣指数,
