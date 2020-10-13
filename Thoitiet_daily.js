@@ -14,12 +14,13 @@ let config = {
         //普通每天的
         template: {
             title: `$[province]$[city]$[district]$[summary] 当前: $[currentTemperature]°C`,
-            subtitle: `$[weatherIcon]$[weather] $[temperatureMin] ~ $[temperatureMax]°C ☔️降雨概率 $[precipProbability]%`,
+            subtitle: `$[weatherIcon]$[weather] $[temperatureMin]~$[temperatureMax]°C ☔️降雨概率 $[precipProbability]%`,
             detail: `🥵空气质量: $[aqiIcon]$[aqi]($[aqiDesc]) 
-🍃风速:   $[windSpeed]km/h $[windDir] 风力$[windPower]
+🍃风速:   $[windSpeed]km/h $[windDir] 
+🍃风力:   $[windPower]
 🌞紫外线: $[uv]($[uvDesc]) 
 💧湿度:   $[currentHumidity]%
-🌡体感度: $[apparentTemperatureMin] ~ $[apparentTemperatureMax]°C 
+🌡体感度: $[apparentTemperatureMin]~$[apparentTemperatureMax]°C 
 💨气压:   $[atmosphere]pa
 🏋🏻‍♀️能见度: $[visibility]
 日出时间$[sunrise]   
@@ -27,24 +28,24 @@ let config = {
 月出时间$[moonrise]  
 月落时间$[moonset]
 
-$[lifeStyle([$[brf]]$[txt])]`
+$[lifeStyle($[icon][$[brf]])]`
 
         },
         lifestyle: { //此处用于显示各项生活指数，可自行调整顺序，顺序越在前面则显示也会靠前，如果您不想查看某一指数，置为false即可，想看置为true即可
-            drsg: true, //穿衣指数,
+            drsg: false, //穿衣指数,
             flu: true, //感冒指数,
-            comf: true, //舒适度指数,
+            comf: false, //舒适度指数,
             cw: false, //洗车指数,
-            sport: false, //运动指数,
+            sport: true, //运动指数,
             trav: false, //旅游指数,
             uv: false, //紫外线指数,
-            air: false, //空气污染扩散条件指数,
+            air: true, //空气污染扩散条件指数,
             ac: false, //空调开启指数,
-            ag: false, //过敏指数,
+            ag: true, //过敏指数,
             gl: false, //太阳镜指数,
             mu: false, //化妆指数,
             airc: false, //晾晒指数,
-            ptfc: false, //交通指数,
+            ptfc: true, //交通指数,
             fsh: false, //钓鱼指数,
             spi: false, //防晒指数
         }
