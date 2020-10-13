@@ -13,7 +13,7 @@ let config = {
     show: {
         //普通每天的
         template: {
-            title: `$[province]$[city]$[district]$[summary] 当前: $[currentTemperature]°C`,
+            title: `当天天气: $[city]$[district]: $[summary] 当前: $[currentTemperature]°C`,
             
             subtitle: `$[weatherIcon]$[weather] $[temperatureMin]~$[temperatureMax]°C ☔️降雨概率 $[precipProbability]%`,
             
