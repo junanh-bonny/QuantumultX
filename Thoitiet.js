@@ -22,8 +22,8 @@ let config = {
 🌡体感度: $[apparentTemperatureMin] ~ $[apparentTemperatureMax]°C 
 💨气压:   $[atmosphere]pa
 
-[生活指数]
-$[lifeStyle($[icon][$[brf]]$[txt])]
+$[hourly($[month]/$[day] $[hour]:00 紫外线指数$[uvIndex]($[uvDesc]) $[temperature]°C $[weatherIcon]$[weather])]`
+        }
 
 [天气周报]
 $[daily($[month]月$[day]日  $[temperatureLow]~$[temperatureHigh]°C  $[weatherIcon]$[weather])]`
