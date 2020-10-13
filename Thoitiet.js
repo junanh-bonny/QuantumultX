@@ -15,8 +15,7 @@ let config = {
         template: {
             title: `$[city]$[district] $[summary]`,
             subtitle: `$[weatherIcon]$[weather] $[temperatureMin] ~ $[temperatureMax]°C ☔️降雨概率 $[precipProbability]%`,
-            detail: `$[hourly($[month]/$[day] $[hour]:00 $[temperature]°C  $[weatherIcon]$[weather] 湿度$[humidity]%)]
-🥵空气质量: $[aqi]($[aqiDesc]) 
+            detail: `🥵空气质量: $[aqi]($[aqiDesc]) 
 🥵空气质量: $[aqi]($[aqiDesc])
 🍃风速: $[windSpeed]km/h $[windDir]
 🌞紫外线指数: $[uv]($[uvDesc]) 
