@@ -7,17 +7,21 @@ let config = {
     aqicn_api: "0297f22ff96c746e3a42bd22f04de7da579b95ad", //从http://aqicn.org/data-platform/token/#/ 上申请key填入即可
     huweather_apiKey: "02c0b08906504c518be495de0674a334", //和风天气APIkey,可自行前往 https://dev.heweather.com/ 进行获取
     lat_lon: "31.211631, 121.386461", //请填写经纬度,直接从谷歌地图中获取即可
-    lang: "zh", //语言,随意切换为您想要的语言哦(zh/zh-tw/ja/en/fr/...)
-    log: 0, //调试日志,0为不开启,1为开启,2为开启精简日志
+    lang: "vi", //语言,随意切换为您想要的语言哦(zh/zh-tw/ja/en/fr/...)
+    log: 2, //调试日志,0为不开启,1为开启,2为开启精简日志
     timeout: 0, //超时时间,单位毫秒(1000毫秒=1秒),一般不推荐修改[为0则不限制超时时间]
     show: {
         //普通每天的
         template: {
-            title: `[天气日报] $[summary]`,
-            subtitle: `$[weatherIcon]$[weather] $[temperatureMin] ~ $[temperatureMax]°C ☔️降雨概率 $[precipProbability]%`,
-            detail: `🥵空气质量 $[aqi]($[aqiDesc]) 🍃风速$[windSpeed]km/h $[windDir]
-🌞紫外线指数 $[uv]($[uvDesc]) 💧湿度$[currentHumidity]%
-🌡体感温度 $[apparentTemperatureMin] ~ $[apparentTemperatureMax]°C 💨气压$[atmosphere]pa
+            title: `$[city]$[district] $[summary] $[天气日报] $[summary]`,
+            subtitle: `$[weatherIcon]$[weather] $[temperatureMin] ~ $[temperatureMax]°C
+☔️降雨概率 $[precipProbability]%`,
+            detail: `🥵空气质量 $[aqi]($[aqiDesc]) 
+🍃风速$[windSpeed]km/h $[windDir]
+🌞紫外线指数 $[uv]($[uvDesc]) 
+💧湿度$[currentHumidity]%
+🌡体感温度 $[apparentTemperatureMin] ~ $[apparentTemperatureMax]°C 
+💨气压$[atmosphere]pa
 
 [生活指数]
 $[lifeStyle($[icon][$[brf]]$[txt])]
