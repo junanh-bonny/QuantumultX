@@ -13,22 +13,19 @@ let config = {
     show: {
         //普通每天的
         template: {
-            title: `$[province]$[city]$[district]$[summary]$[currentTemperature]`,
+            title: `$[province]$[city]$[district]$[summary] 当前: $[currentTemperature]°C`,
             subtitle: `$[weatherIcon]$[weather] $[temperatureMin] ~ $[temperatureMax]°C ☔️降雨概率 $[precipProbability]%`,
-            detail: `🥵空气质量 $[aqi]($[aqiDesc]) 
+            detail: `🥵空气质量 $[aqiIcon]$[aqi]($[aqiDesc]) 
 🍃风速$[windSpeed]km/h $[windDir]
 🌞紫外线指数 $[uv]($[uvDesc]) 
 💧湿度$[currentHumidity]%
 🌡体感温度 $[apparentTemperatureMin] ~ $[apparentTemperatureMax]°C 
 💨气压$[atmosphere]pa
-💨能见度$[visibility]
-💨日出时间$[sunrise]
-💨日落时间$[sunset]
-💨月出时间$[moonrise]
-💨月落时间$[moonset]
-
-[生活指数]
-$[lifeStyle($[icon][$[brf]]$[txt])]
+能见度$[visibility]
+日出时间$[sunrise]
+日落时间$[sunset]
+月出时间$[moonrise]
+月落时间$[moonset]
 
 [天气周报]
 $[weeklySummary]$[daily($[month]月$[day]日  $[temperatureLow]~$[temperatureHigh]°C  $[weatherIcon]$[weather])]`
