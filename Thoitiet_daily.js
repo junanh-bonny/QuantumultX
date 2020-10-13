@@ -13,18 +13,18 @@ let config = {
     show: {
         //普通每天的
         template: {
-            title: `当天天气: $[city]$[district]: $[summary] 当前: $[currentTemperature]°C`,
+            title: `今天: $[city]$[district]: $[summary]`,
             
-            subtitle: `$[weatherIcon]$[weather] $[temperatureMin]~$[temperatureMax]°C ☔️降雨概率 $[precipProbability]%`,
+            subtitle: `$[weatherIcon]$[weather] $[temperatureMin]~$[temperatureMax]°C，当前: $[currentTemperature]°C， ☔️降雨概率 $[precipProbability]%`,
             
             detail: `🥵空气质量: $[aqiIcon]$[aqi]($[aqiDesc]) 
-🍃风速:   $[windSpeed]km/h $[windDir] 
-🍃风力:   $[windPower]
-🌞紫外线: $[uv]($[uvDesc]) 
-💧湿度:   $[currentHumidity]%
-🌡体感度: $[apparentTemperatureMin]~$[apparentTemperatureMax]°C 
-💨气压:   $[atmosphere]pa
-🏋🏻‍♀️能见度: $[visibility]
+🍃风速:     $[windSpeed]km/h $[windDir] 
+🍃风力:     $[windPower]
+🌞紫外线:  $[uv]($[uvDesc]) 
+💧湿度:     $[currentHumidity]%
+🌡体感度:  $[apparentTemperatureMin]~$[apparentTemperatureMax]°C 
+💨气压:     $[atmosphere]pa
+🏋🏻‍♀️能见度:   $[visibility]
 日出时间$[sunrise]   月出时间$[moonrise] 
 日落时间$[sunset]   月落时间$[moonset]
 $[lifeStyle($[icon][$[brf]])]`
@@ -38,7 +38,7 @@ $[lifeStyle($[icon][$[brf]])]`
             sport: true, //运动指数,
             trav: false, //旅游指数,
             uv: false, //紫外线指数,
-            air: true, //空气污染扩散条件指数,
+            air: false, //空气污染扩散条件指数,
             ac: false, //空调开启指数,
             ag: true, //过敏指数,
             gl: false, //太阳镜指数,
