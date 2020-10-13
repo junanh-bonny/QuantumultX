@@ -13,7 +13,7 @@ let config = {
     show: {
         //普通每天的
         template: {
-            title: `小时天气: $[city]$[district]: $[weeklySummary] 当前: $[currentTemperature]°C`,
+            title: `小时天气: $[city]$[district]: $[summary] 当前: $[currentTemperature]°C`,
             subtitle: ``,
             detail: `$[hourly($[month]/$[day] $[hour]:00 $[temperature]°C  $[aqiIcon]$[weatherIcon]$[weather] 湿度$[humidity]%)]`
         },
