@@ -22,11 +22,9 @@ let config = {
 🌡体感度: $[apparentTemperatureMin] ~ $[apparentTemperatureMax]°C 
 💨气压:   $[atmosphere]pa
 
-$[hourly($[month]/$[day] $[hour]:00 紫外线指数$[uvIndex]($[uvDesc]) $[temperature]°C $[weatherIcon]$[weather])]`
-        }
+$[hourly($[month]/$[day] $[hour]:00 紫外线指数$[uvIndex]($[uvDesc]) $[temperature]°C $[weatherIcon]$[weather])]`      
 
-[天气周报]
-$[daily($[month]月$[day]日  $[temperatureLow]~$[temperatureHigh]°C  $[weatherIcon]$[weather])]`
+`$[daily($[month]月$[day]日  $[temperatureLow]~$[temperatureHigh]°C  $[weatherIcon]$[weather])]`
         },
         lifestyle: { //此处用于显示各项生活指数，可自行调整顺序，顺序越在前面则显示也会靠前，如果您不想查看某一指数，置为false即可，想看置为true即可
             drsg: false, //穿衣指数,
