@@ -13,7 +13,7 @@ let config = {
     show: {
         //普通每天的
         template: {
-            title: `$[province]$[city]$[district]$[weeklySummary]`,
+            title: `一周天气：$[city]$[district]: $[weeklySummary]`,
             subtitle: ``,
             detail: `$[daily($[month]月$[day]日  $[temperatureLow]~$[temperatureHigh]°C  $[aqiIcon]$[weatherIcon]$[weather])]`
             
