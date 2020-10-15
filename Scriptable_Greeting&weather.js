@@ -46,8 +46,8 @@ const columns = [{
   items: [
     
     left,
-    greeting,
     date,
+    greeting,
     events,
     
 ]}, {
@@ -80,7 +80,7 @@ const dateSettings = {
   ,staticDateSize: "small"
 
   // Determine the date format for each date type. See docs.scriptable.app/dateformatter
-  ,smallDateFormat: "EEEE, MMMM d"
+  ,smallDateFormat: "E, MMM dd"
   ,largeDateLineOne: "EEEE,"
   ,largeDateLineTwo: "MMMM d"
 }
@@ -105,7 +105,7 @@ const eventSettings = {
   ,selectCalendars: []
 
   // Leave blank "" for no color, or specify shape (circle, rectangle) and/or side (left, right).
-  ,showCalendarColor: "rectangle left"
+  ,showCalendarColor: "circle left"
 }
 
 // WEATHER
@@ -133,17 +133,17 @@ const localizedText = {
   
   // The text shown if you add a greeting item to the layout.
   nightGreeting: "晚安!~🥱🛌"
-  ,morningGreeting: "早上好!🍮🎸"
-  ,afternoonGreeting: "下午好!记得喝一杯热茶哦!~☕️🍾"
-  ,eveningGreeting: "傍晚了，多笑笑!~ 😁😚"
+  ,morningGreeting: "上午好!用微笑开始一天!~🍮🎸"
+  ,afternoonGreeting: "下午好!记得喝一杯热茶!~☕️🍾"
+  ,eveningGreeting: "晚上了,多笑笑!~😁😚"
   
   // The text shown if you add a future weather item to the layout, or tomorrow's events.
-  ,nextHourLabel: "1小时后"
+  ,nextHourLabel: "Next hour"
   ,tomorrowLabel: "明天"
 
   // The text shown in an events item when no events remain.
   // Change to blank "" if you don't want to show a message.
-  ,noEventMessage: "Harmony brings wealth!~"
+  ,noEventMessage: "Harmony brings wealth 和气生财!~"
   
   // The text shown after the hours and minutes of an event duration.
   ,durationMinute: "m"
@@ -158,7 +158,7 @@ const textFormat = {
   defaultText: { size: 14, color: "ffffff", font: "regular" },
   
   // Any blank values will use the default.
-  smallDate:   { size: 17, color: "", font: "semibold" },
+  smallDate:   { size: 20, color: "", font: "semibold" },
   largeDate1:  { size: 30, color: "", font: "light" },
   largeDate2:  { size: 30, color: "", font: "light" },
   
@@ -172,7 +172,7 @@ const textFormat = {
   smallTemp:   { size: 18, color: "", font: "" },
   tinyTemp:    { size: 14, color: "", font: "" },
   
-  customText:  { size: 14, color: "", font: "" },
+  customText:  { size: 14, color: "ff0000", font: "regular" },
 }
 
 /*
