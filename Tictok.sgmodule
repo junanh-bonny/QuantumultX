@@ -1,0 +1,7 @@
+# TikTok By wzw1997007 & Choler
+[URL Rewrite]
+(?<=_region=)CN(?=&) url 307 VN
+(?<=&app_version=)1[6-9]..(?=.?.?&) url 307 17..
+(?<=\?version_code=)1[6-9]..(?=.?.?&) url 307 17..
+[MITM]
+hostname = *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
