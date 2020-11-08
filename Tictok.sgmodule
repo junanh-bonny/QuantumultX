@@ -7,4 +7,4 @@
 (?<=&app_version=)1[6-9]..(?=.?.?&) url 307 17..
 (?<=\?version_code=)1[6-9]..(?=.?.?&) url 307 17..
 [MITM]
-hostname = *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
+hostname = %INSERT% *.musical.ly, *.tiktokv.com, *.byteoversea.com, *.snssdk.com
