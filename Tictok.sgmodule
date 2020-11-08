@@ -1,4 +1,7 @@
-# TikTok By wzw1997007 & Choler
+#!name=VN TikTok
+#!desc=解除 TikTok 区域限制。
+#!system=ios
+
 [URL Rewrite]
 (?<=_region=)CN(?=&) url 307 VN
 (?<=&app_version=)1[6-9]..(?=.?.?&) url 307 17..
