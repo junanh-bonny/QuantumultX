@@ -1,0 +1,9 @@
+#!name=PXX
+#!desc=Mua cho tiện
+#!system=ios
+
+
+hostname = *-buy.itunes.apple.com, 
+
+PXX = type=http-request,pattern=^https:\/\/.*-buy\.itunes\.apple\.com\/.*,script-path= https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/pxx-req.js
+PXX = type=http-response,pattern=^https:\/\/.*-buy\.itunes\.apple\.com\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/pxx-res.js
