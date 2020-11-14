@@ -27,6 +27,20 @@ hostname = api.revenuecat.com, api.wakamoment.ga, *.bh3.com, api.diyidan.net, ap
 
 //NiChi-request = type=http-response,pattern=^https:\/\/mini-hk\.bybutter\.com\/mood\/orders,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Nichi-order.js,script-update-interval=0
 
+//Wps1 = type=http-response,pattern=^https:\/\/(vip|account)\.wps\.(com|cn)\/(api/users/|userinfo)*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Wps.js,script-update-interval=0
+
+//Wps2 = type=http-response,pattern=^https:\/\/account\.wps\.(cn|com)\/api\/users\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Wps.js,script-update-interval=0
+
+//YouTubeAd = type=http-response,pattern=^https?:\/\/[\s\S]*\.googlevideo\.com\/.*&(oad|ctier),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/YouTube.js,script-update-interval=0
+
+lumosity2 = type=http-response,pattern=^https:\/\/www\.lumosity\.com\/api\/v2\/subscriptions*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/lumosity2.js,script-update-interval=0
+
+^https:\/\/www\.lumosity\.com\/api\/v2\/subscriptions* url script-response-body https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/lumosity2.js
+
+CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
+
+^https:\/\/www\.lumosity\.com\/api\/v2\/user* url script-response-body https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/lumosity.js
+
 Autocad = type=http-response,pattern=^https:\/\/app\.autocad360\.com\/main\/users\/login\/v2$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/autocad.js,script-update-interval=0
 
 CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
@@ -183,10 +197,40 @@ endel = type=http-response,pattern=^https:\/\/api-production\.endel\.io\/.*\/cal
 
 grammarly = type=http-response,pattern=^https:\/\/subscription\.grammarly\.com\/api\/v1$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/grammarly.js,script-update-interval=0
 
+Splice = type=http-response,pattern=^https:\/\/splice\.oracle\.\w+\.com\/devices\/me,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Splice.js,script-update-interval=0
 
+planner5d = type=http-response,pattern=^https:\/\/planner5d\.com\/api\/sets,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/planner5d.js,script-update-interval=0
 
+playerxtreme = type=http-response,pattern=^https:\/\/secure\.istreamer\.com\/backend.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/playerxtreme.js,script-update-interval=0
 
+monkeyuni = type=http-response,pattern=^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/monkey.js,script-update-interval=0
 
+VideoStar = type=http-response,pattern=^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/VideoStar.js,script-update-interval=0
+
+Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Textnow.js,script-update-interval=0
+^https:\/\/api\.textnow\.me\/api2.0\/users\/.* url script-response-body https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Textnow.js
+
+MuscleBooster = type=http-response,pattern=^https:\/\/menscoach-api\.asqq\.io\/prod\/user$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/MuscleBooster.js,script-update-interval=0
+
+MoneyLover = type=http-response,pattern=^https:\/\/revoapi\.moneylover\.me\/api\/status$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/007MoneyLover.js,script-update-interval=0
+
+LittleFox = type=http-response,pattern=^https:\/\/apis\.littlefox\.com\/api\/v1\/contents\/story\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/LittleFox.js,script-update-interval=0
+
+headspace = type=http-response,pattern=^https:\/\/api\.prod\.headspace\.com\/subscription\/user-subscriptions?userId*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/headspace.js,script-update-interval=0
+
+sleepcycle = type=http-response,pattern=^https:\/\/s\.sleepcycle\.com\/(useraccountstats|api\/v1\/subscription\/get$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/sleepcycle.js,script-update-interval=0
+
+ejoy = type=http-response,pattern=^https:\/\/api\.ejoy\.io\/graph$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/ejoy.js,script-update-interval=0
+
+weatherlive = type=http-response,pattern=^https:\/\/subs\.platforms\.team\/apple\/verifyTransaction$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/weatherlive.js,script-update-interval=0
+
+CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
+
+CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
+
+CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
+
+CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
 
 
 
