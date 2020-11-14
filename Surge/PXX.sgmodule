@@ -8,5 +8,6 @@ hostname = *-buy.itunes.apple.com,
 
 [Script]
 
-PXX = type=http-request,pattern=^https:\/\/.*-buy\.itunes\.apple\.com\/.*,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/pxx-req.js
-PXX = type=http-response,pattern=^https:\/\/.*-buy\.itunes\.apple\.com\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/pxx-res.js
+^https:\/\/.*-buy\.itunes\.apple\.com\/WebObjects\/(MZFastFinance\.woa\/wa\/inAppCheckDownloadQueue|MZFinance\.woa\/wa\/inAppTransactionDone*) url response-body (.+(\n{1,})){1,} response-body <?xml version="1.0" encoding="UTF-8" standalone="no"?> <plist version="1.0"> <dict> <key>pings</key> <array></array> <key>jingleDocType</key><string>inAppSuccess</string> <key>jingleAction</key><string>inAppPendingTransactions</string> <key>dsid</key><string>16221907643</string> <key>download-queue-item-count</key><integer>0</integer> <key>app-list</key> <array> </array> <!-- dataSource: [n/a]--> </dict> </plist>
+^https:\/\/.*-buy\.itunes\.apple\.com\/WebObjects/MZFinance\.woa\/wa\/inAppRegrantPurchaseHistory$ url script-request-body https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/pxx-req.js
+^https:\/\/.*-buy\.itunes\.apple\.com\/WebObjects/MZFinance\.woa\/wa\/inAppRegrantPurchaseHistory$ url script-response-body https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/pxx-res.js
