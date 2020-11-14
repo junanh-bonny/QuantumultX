@@ -63,7 +63,9 @@ durecorder = type=http-response,pattern=^https?:\/\/.*default-recorders.*\.com\/
 
 xmind = type=http-response,pattern=^https?:\/\/.*\.xmind\..*\/_res\/devices ,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/xmind.js,script-update-interval=0
 
-CamScanner = type=http-response,pattern=^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/fantastical.js,script-update-interval=0
+fantastical = type=http-response,pattern=^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/fantastical.js,script-update-interval=0
+
+
 
 
 
