@@ -212,7 +212,6 @@ playerxtreme = type=http-response,pattern=^https:\/\/secure\.istreamer\.com\/bac
 VideoStar = type=http-response,pattern=^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/VideoStar.js,script-update-interval=0
 
 Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Textnow.js,script-update-interval=0
-^https:\/\/api\.textnow\.me\/api2.0\/users\/.* url script-response-body https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Textnow.js
 
 MuscleBooster = type=http-response,pattern=^https:\/\/menscoach-api\.asqq\.io\/prod\/user$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/MuscleBooster.js,script-update-interval=0
 
