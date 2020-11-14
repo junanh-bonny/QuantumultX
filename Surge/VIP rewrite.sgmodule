@@ -33,14 +33,6 @@ hostname = api.revenuecat.com, api.wakamoment.ga, *.bh3.com, api.diyidan.net, ap
 
 //YouTubeAd = type=http-response,pattern=^https?:\/\/[\s\S]*\.googlevideo\.com\/.*&(oad|ctier),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/YouTube.js,script-update-interval=0
 
-lumosity2 = type=http-response,pattern=^https:\/\/www\.lumosity\.com\/api\/v2\/subscriptions*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/lumosity2.js,script-update-interval=0
-
-^https:\/\/www\.lumosity\.com\/api\/v2\/subscriptions* url script-response-body https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/lumosity2.js
-
-CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
-
-^https:\/\/www\.lumosity\.com\/api\/v2\/user* url script-response-body https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/lumosity.js
-
 Autocad = type=http-response,pattern=^https:\/\/app\.autocad360\.com\/main\/users\/login\/v2$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/autocad.js,script-update-interval=0
 
 CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
@@ -203,8 +195,6 @@ planner5d = type=http-response,pattern=^https:\/\/planner5d\.com\/api\/sets,requ
 
 playerxtreme = type=http-response,pattern=^https:\/\/secure\.istreamer\.com\/backend.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/playerxtreme.js,script-update-interval=0
 
-monkeyuni = type=http-response,pattern=^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/monkey.js,script-update-interval=0
-
 VideoStar = type=http-response,pattern=^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/VideoStar.js,script-update-interval=0
 
 Textnow = type=http-response,pattern=^https:\/\/api\.textnow\.me\/api2.0\/users\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Textnow.js,script-update-interval=0
@@ -224,36 +214,33 @@ ejoy = type=http-response,pattern=^https:\/\/api\.ejoy\.io\/graph$,requires-body
 
 weatherlive = type=http-response,pattern=^https:\/\/subs\.platforms\.team\/apple\/verifyTransaction$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/weatherlive.js,script-update-interval=0
 
-CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
+lumosity1 = type=http-response,pattern=^https:\/\/www\.lumosity\.com\/api\/v2\/user*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/lumosity.js,script-update-interval=0
 
-CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
+lumosity2 = type=http-response,pattern=^https:\/\/www\.lumosity\.com\/api\/v2\/subscriptions*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/lumosity2.js,script-update-interval=0
 
-CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
+maziidict = type=http-response,pattern=^https:\/\/api\.mazii\.net\/api\/init-login$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/maziidict.js,script-update-interval=0
 
-CamScanner = type=http-response,pattern=^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/CamScanner.js,script-update-interval=0
+lichviet1 = type=http-response,pattern=^https?:\/\/api\.lichviet\.org\/user\/premiumstatus$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/lichviet.js,script-update-interval=0
 
+lichviet2 = type=http-response,pattern=^https?:\/\/api\.lichviet\.org\/user\/linkdetail$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/lichviet2.js,script-update-interval=0
 
+thenx = type=http-response,pattern=^https:\/\/api\.thenx\.com\/v1\/users\/current$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/thenx.js,script-update-interval=0
 
+Quizlet1 = type=http-response,pattern=^https:\/\/api\.quizlet\.com\/3.4\/users*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Quizlet.js,script-update-interval=0
 
+Quizlet2 = type=http-response,pattern=^https:\/\/api\.quizlet\.com\/3.4\/users\/apple-subscription\/free-trial$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/quizlet2.js,script-update-interval=0
 
+monkeyuni1 = type=http-response,pattern=^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/monkey.js,script-update-interval=0
 
+monkeyuni2 = type=http-response,pattern=^https:\/\/www\.api\.monkeyuni\.net\/api\/v1\/mobile\/account\/load-update*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Monkeycombo.js,script-update-interval=0
 
+spendee = type=http-response,pattern=^https:\/\/api\.spendee\.com\/.*\/(sync-device|user-set-subscription|auth\/login)$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/spendee.js,script-update-interval=0
 
+xiangxiangapps = type=http-response,pattern=^https:\/\/.*\.xiangxiangapps\.com\/ucp\/index*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/xiangxiangapps.js,script-update-interval=0
 
+Wolfram1 = type=http-response,pattern=^https:\/\/www\.wolframalpha\.com\/users\/me\/account*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Wolfram1.js,script-update-interval=0
 
-
-
-
-
-
-
-
-
-
-
-
-
+Wolfram2 = type=http-response,pattern=^https:\/\/account\.wolfram\.com\/auth\/introspect$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Wolfram.js,script-update-interval=0
 
 
-
-
+CamScanner = type=http-response,pattern=^https:\/\/api\.shred\.app\/verifyReceipt$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/shred.js,script-update-interval=0
