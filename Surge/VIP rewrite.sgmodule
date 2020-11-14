@@ -9,18 +9,6 @@ hostname = api.revenuecat.com, api.wakamoment.ga, *.bh3.com, api.diyidan.net, ap
 
 [Script]
 
-#3 strange type
-
-//calm = type=http-response,pattern=^https:\/\/api\.calm\.com\/me$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/calm.vip.js,script-update-interval=0
-
-//^https:\/\/www\.calm\.com\/mobile\/manage-subscription\?token=*  url reject-img
-
-//workingcopy github education = type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$,response-body "student":false response-body "student":true
-
-#Youtube Ad cancel?
-
-//YouTubeAd = type=http-response,pattern=^https?:\/\/[\s\S]*\.googlevideo\.com\/.*&(oad|ctier),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/YouTube.js,script-update-interval=0
-
 #End of Nichi pattern have " -"?
 
 //NiChi-response = type=http-response,pattern=^https?:\/\/mini-hk\.bybutter\.com\/mood\/(official-templates|privileges) -,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/NiChi.js,script-update-interval=0
@@ -33,9 +21,6 @@ hostname = api.revenuecat.com, api.wakamoment.ga, *.bh3.com, api.diyidan.net, ap
 
 //Elsanow-request = type=http-request,pattern=^https:\/\/pool\.elsanow\.io\/content\/api\/v1\/modules\/download$,requires-header=1,max-size=0,(\r\n)x-session-token:.+(\r\n) request-header $1x-session-token: F3S0w0bysBQFdbjtxpFurrFv2ItBBcBkVQxUddQW+9vjt2JXM751ksqq5GAWpkl+kk9nhig9BGh9JhYHQaokmendY6zLZDscHiRkZD2HrdJclKVCLordAARJhYIrf5C+5OSK6ax2TA45CKi8S09FEtYXN4noXO7gt42NT6WPIv6DKhdIwVxQuIAMLU5abmpMTDlyWeI4ulBWcOQbuZWWZg==
 
-//Wps1 = type=http-response,pattern=^https:\/\/(vip|account)\.wps\.(com|cn)\/(api/users/|userinfo)*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Wps.js,script-update-interval=0
-
-
 ###########################
 
 #Revenuecat - 1blocker, pillow, airmail, noto, strucc, bunpou n2, weatherkit, weatherline, logo shop
@@ -44,7 +29,7 @@ Revenuecat-response = type=http-response,pattern=^https:\/\/api\.revenuecat\.com
 
 Revenuecat-request = type=http-request,pattern=^https:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/.*),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/revenuecat-headers.js,script-update-interval=0
 
-Wps2 = type=http-response,pattern=^https:\/\/account\.wps\.(cn|com)\/api\/users\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Wps.js,script-update-interval=0
+Wps = type=http-response,pattern=^https:\/\/account\.wps\.(cn|com)\/api\/users\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/Wps.js,script-update-interval=0
 
 Autocad = type=http-response,pattern=^https:\/\/app\.autocad360\.com\/main\/users\/login\/v2$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/KD-AIP/kd-qx/master/JS/autocad.js,script-update-interval=0
 
