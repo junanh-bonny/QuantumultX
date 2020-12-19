@@ -6,7 +6,7 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
 } else {
 	
 // live wallpaper
-     if($persistentStore.valueForKey("lvwllpp")=="true") {  
+     if($persistentStore.read("lvwllpp")=="true") {  
 		obj["subscriber"]["entitlements"]["premium"]={
         "grace_period_expires_date" : null,
         "purchase_date" : "2020-12-18T04:10:45Z",
