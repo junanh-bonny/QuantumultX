@@ -1,5 +1,12 @@
 const headers = $request.headers;
 
+// live wallpaper
+if (headers["User-Agent"].indexOf("WallpaperApp") != -1) {
+  $persistentStore.setValueForKey("true", "lvwllpp");
+} else {
+  $persistentStore.setValueForKey("false", "lvwllpp");
+}
+
 // paper
 if (headers["User-Agent"].indexOf("Paper") != -1) {
   $persistentStore.write("true", "ppr");
