@@ -25,8 +25,7 @@ if(url.endsWith("offerings")||url.endsWith("products")) {
         "purchase_date" : "2020-12-18T04:10:45Z",
         "store" : "app_store"
 		};
-          $persistentStore.removeAllValues();
-     };	
+      };	
 
 // paper
      if($persistentStore.read("ppr")=="true") {  
