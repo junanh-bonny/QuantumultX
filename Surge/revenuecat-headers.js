@@ -2,9 +2,9 @@ const headers = $request.headers;
 
 // live wallpaper
 if (headers["User-Agent"].indexOf("WallpaperApp") != -1) {
-  $persistentStore.setValueForKey("true", "lvwllpp");
+  $persistentStore.write("true", "lvwllpp");
 } else {
-  $persistentStore.setValueForKey("false", "lvwllpp");
+  $persistentStore.write("false", "lvwllpp");
 }
 
 // paper
