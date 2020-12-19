@@ -4,6 +4,29 @@ let url=$request.url;
 if(url.endsWith("offerings")||url.endsWith("products")) {
 	$done({});
 } else {
+	
+// live wallpaper
+     if($persistentStore.valueForKey("lvwllpp")=="true") {  
+		obj["subscriber"]["entitlements"]["premium"]={
+        "grace_period_expires_date" : null,
+        "purchase_date" : "2020-12-18T04:10:45Z",
+        "product_identifier" : "app.leoapp.1y_3dt_sub0001",
+        "expires_date" : "2099-12-21T04:10:45Z"
+		};
+		
+		obj["subscriber"]["subscriptions"]["app.leoapp.1y_3dt_sub0001"]={
+        "is_sandbox" : false,
+        "period_type" : "normal",
+        "billing_issues_detected_at" : null,
+        "unsubscribe_detected_at" : null,
+        "expires_date" : "2099-12-21T04:10:45Z",
+        "grace_period_expires_date" : null,
+        "original_purchase_date" : "2020-12-18T04:10:45Z",
+        "purchase_date" : "2020-12-18T04:10:45Z",
+        "store" : "app_store"
+		};
+          $persistentStore.removeAllValues();
+     };	
 
 // paper
      if($persistentStore.read("ppr")=="true") {  
