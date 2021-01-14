@@ -1,5 +1,12 @@
 const headers = $request.headers;
 
+// darkroom
+if (headers["User-Agent"].indexOf("Darkroom") != -1) {
+  $persistentStore.write("true", "drkrm");
+} else {
+  $persistentStore.write("false", "drkrm");
+}
+
 // live wallpaper
 if (headers["User-Agent"].indexOf("WallpaperApp") != -1) {
   $persistentStore.write("true", "lvwllpp");
