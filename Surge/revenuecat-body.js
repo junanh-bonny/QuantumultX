@@ -4,6 +4,26 @@ let url=$request.url;
 if(url.endsWith("offerings")||url.endsWith("products")) {
 	$done({});
 } else {
+
+// darkroom
+     if($persistentStore.read("drkrm")=="true") {  
+		obj["subscriber"]["entitlements"]["co.bergen.Darkroom.entitlement.allToolsAndFilters"]={
+        "expires_date" : "2099-02-18T07:52:54Z",
+        "product_identifier" : "co.bergen.Darkroom.product.forever.everything",
+        "purchase_date" : "2020-02-11T07:52:54Z"
+		};
+		
+		obj["subscriber"]["subscriptions"]["co.bergen.Darkroom.product.forever.everything"]={
+        "is_sandbox" : false,
+        "period_type" : "normal",
+        "billing_issues_detected_at" : null,
+        "unsubscribe_detected_at" : null,
+        "expires_date" : "2099-02-18T07:52:54Z",
+        "original_purchase_date" : "2020-02-11T07:52:55Z",
+        "purchase_date" : "2020-02-11T07:52:54Z",
+        "store" : "app_store"
+		};
+      };	
 	
 // live wallpaper
      if($persistentStore.read("lvwllpp")=="true") {  
