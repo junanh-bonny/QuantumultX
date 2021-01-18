@@ -5,24 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {"name":"🇨🇳 台湾 1 Premium","type":"ss","server":"south-direct.relay.ccccloudnodes.xyz","port":"20000","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇭🇰 香港 1","type":"ss","server":"south-direct.relay.ccccloudnodes.xyz","port":"10000","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇭🇰 香港 2","type":"ss","server":"south-direct.relay.ccccloudnodes.xyz","port":"10001","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇭🇰 香港 5 Premium","type":"ss","server":"south-direct.relay.ccccloudnodes.xyz","port":"10004","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇭🇰 香港 6 Premium","type":"ss","server":"south-direct.relay.ccccloudnodes.xyz","port":"10005","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇯🇵 日本 1","type":"ss","server":"east-direct.relay.ccccloudnodes.xyz","port":"30000","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇯🇵 日本 2","type":"ss","server":"east-direct.relay.ccccloudnodes.xyz","port":"30001","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇯🇵 日本 3","type":"ss","server":"east-direct.relay.ccccloudnodes.xyz","port":"30002","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇯🇵 日本 4","type":"ss","server":"east-direct.relay.ccccloudnodes.xyz","port":"30003","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇸🇬 新加坡 1","type":"ss","server":"gzcm.relay.ccccloudnodes.xyz","port":"40000","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇸🇬 新加坡 2","type":"ss","server":"gzcm.relay.ccccloudnodes.xyz","port":"40001","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇸🇬 新加坡 3","type":"ss","server":"gzcm.relay.ccccloudnodes.xyz","port":"40002","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇸🇬 新加坡 4","type":"ss","server":"gzcm.relay.ccccloudnodes.xyz","port":"40003","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇺🇸 美国 1","type":"ss","server":"east-direct.relay.ccccloudnodes.xyz","port":"50000","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇺🇸 美国 2","type":"ss","server":"east-direct.relay.ccccloudnodes.xyz","port":"50001","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇺🇸 美国 3","type":"ss","server":"east-direct.relay.ccccloudnodes.xyz","port":"50002","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇺🇸 美国 4","type":"ss","server":"east-direct.relay.ccccloudnodes.xyz","port":"50003","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
-  - {"name":"🇺🇸 美国 5 Premium","type":"ss","server":"east-direct.relay.ccccloudnodes.xyz","port":"50004","cipher":"aes-256-gcm","password":"4ddb7101-60ad-47f5-a77b-d15c5049ded6","udp":true,"tfo":true}
+ 
 
 proxy-groups:
   - name: 🚀 节点选择
